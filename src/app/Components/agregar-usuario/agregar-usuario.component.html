@@ -17,3 +17,87 @@
 	</form>
 </div>
 -->
+
+<div>
+	<div class="row text-center mt-4">
+		<h2 class="text-light" style="font-weight: 500;"> Agregar un nuevo usuario </h2>
+	</div>
+	
+	<form action="/save_user" method="POST" autocomplete="on" enctype="multipart/form-data">
+		<div class="row">
+			<div class="col-4 align-items-center mt-4">
+				<div class="">
+					<img class="item-center" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="Imagen a subir" width="200" height="200">
+				</div>
+				<div class="form-group">
+					<label for="formFile" class="form-label mt-4">Subir Fotografía...</label>
+					<input class="form-control text-light input-color" type="file" id="formFile" name="Foto">
+				</div>
+
+				<div class="form-group mt-4">
+					<button type="submit" class="btn btn-success btn-lg item-center">     
+						Guardar
+					</button>
+				</div>
+			</div>
+				
+			<div class="col-7 mt-4">
+				<div class="card card-body" style="background-color: #3b9e7f; font-weight: 500; color: whitesmoke;">
+					
+					<div class="form-group">
+						<label for="Set_p_nombre" class="form-label mt-2">Primer nombre</label>
+						<input id="Set_p_nombre" type="text" name="Primer_nombre" placeholder="Primer nombre" class="form-control input-color" required>
+					</div>
+					<div class="form-group">
+						<label for="Set_s_nombre" class="form-label mt-2">Segundo nombre</label>
+						<input id="Set_s_nombre" type="text" name="Segundo_nombre" placeholder="Segundo nombre" class="form-control input-color">
+					</div>
+					<div class="form-group">
+						<label for="Set_apellido_p" class="form-label mt-2">Apellido paterno</label>
+						<input id="Set_apellido_p" type="text" name="Apellido_paterno" placeholder="Apellido paterno" class="form-control input-color" required>
+					</div>
+					<div class="form-group">
+						<label for="Set_apellido_m" class="form-label mt-2">Apellido materno</label>
+						<input id="Set_apellido_m" type="text" name="Apellido_materno" placeholder="Apellido materno" class="form-control input-color" required>
+					</div>
+					<div class="form-group">
+						<label for="Select_rol" class="form-label mt-2 input-color">Rol</label>
+						<select class="form-select input-color" id="Select_fecha" name="Rol" required>
+						<option value="">-- Seleccione rol--</option>
+						<option>Administrador</option>
+						<option>Lider de proyecto</option>
+						<option>Miembro</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="Select_carrera" class="form-label mt-2 input-color">Carrera</label>
+						<select class="form-select input-color" id="Select_fecha" name="Carrera" required>
+						<option value="">-- Seleccione carrera--</option>
+						<option>Ingeniería de Software</option>
+						<option>Ingeniería en Ciencias de Datos</option>
+						<option>Ingeniería en Computación y Sistemas</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label for="Select_proyecto" class="form-label mt-2 input-color">Proyecto</label>
+						<select class="form-select input-color" id="Select_fecha" name="Proyecto" required>
+						<option value="">-- Seleccione proyecto--</option>
+						<option>Control de Acceso - Recoocimiento Facial</option>
+						<option>SAS</option>
+						<option>SIRAC</option>
+						</select>
+					</div>
+					
+					
+					
+				</div>
+			</div>
+				
+			
+		</div>
+		
+		
+	</form>
+	
+
+</div>
